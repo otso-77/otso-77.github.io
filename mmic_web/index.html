@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MMIC</title>
+  <style>
+        /* 核心两行代码，实现图片水平居中，专业规范！ */
+        img {
+            display: block;   /* 必加，让margin:0 auto生效 */
+            margin: 0 auto;   /* 核心：左右自动居中 */
+            max-width: 600px; /* 可选：限制图片宽度，不变形，美观 */
+            margin-top: 30px; /* 可选：顶部留空白，不贴顶 */
+        }
+        body{
+             text-align: center
+        }
+    a{text-decoration: none;}
+    
+                                /*set imgs*/
+    .top_button_img{
+  /* 核心：取消居中 → 覆盖全局的 margin:0 auto */
+  margin: 0 !important; 
+  /* 核心：固定悬浮在页面右下角【永不消失，回到顶部按钮标配】 */
+  position: fixed;
+  bottom: 30px;  /* 距离页面底部的距离，可自己调，比如20px */
+  right: 30px;   /* 距离页面右侧的距离，可自己调，比如20px */
+  /* 取消全局的最大宽度限制，让按钮图片保持原尺寸 */
+  max-width: none !important;
+  width: 60px; /* 按钮图片大小，可自己改，比如50px */
+  height: auto;}
+    .otso_jpg{display: inline-block; margin: auto;
+           }
+
+    </style>
+</head>
+
+<body>
+<a href="#" role ="button">
+    <img class="top_button_img"    src="top_arrow.png" 
+    alt="top img fall to dispaly"
+    title="reture to the top">
+</a>
+
+
+
+<!--this is the MMIC icon*/-->
+<img src="MMIC edition1.png" alt="MMIC edition1 fall to display" width="900">
+
+<h1>This is a websit for MMIC <br>by otso <br> and it is just a pilot</h1>
+
+<a href="repository_otso.html" title="repository for otso">
+    <img src="otso.jpg" alt="otso.jpg " width="100" ></a><br>
+<p>You can click the icon<img class="otso_jpg" src="otso.jpg" alt="otso.jpg " width="20" >above to visit otso's repository</p>
+<p>As I had declared the website is just a pilot, so it is definitely very simple.</p>
+
+
+
+</body>
+</html>
